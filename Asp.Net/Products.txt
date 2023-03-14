@@ -1,0 +1,26 @@
+use master;
+CREATE TABLE IceCreamProducts1 (
+    ProductId int PRIMARY KEY,
+    ProductName nvarchar(50) NOT NULL,
+    Price decimal(10,2) NOT NULL,
+    Category nvarchar(50) NOT NULL
+)
+
+INSERT INTO IceCreamProducts1(ProductId, ProductName, Price, Category)
+VALUES (1, 'Black Current', 120, 'Ice Cream'),
+       (2, 'Strawberry', 100, 'Ice Cream'),
+       (3, 'Mango', 100, 'Ice Cream'),
+       (4, 'Pista', 110, 'Ice Cream')
+
+
+
+select * from IceCreamProducts1
+
+
+
+
+CREATE PROCEDURE GetIceCreamProducts1
+AS
+BEGIN
+    SELECT * FROM IceCreamProducts1 WHERE Category = 'IceCream'
+END
