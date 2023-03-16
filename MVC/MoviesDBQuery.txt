@@ -1,0 +1,22 @@
+create database MoviesDB1;
+use MoviesDB1 
+CREATE TABLE TamilMovies (
+  Mid INT PRIMARY KEY,
+  MovieName VARCHAR(255),
+  DateOfRelease DATE
+);
+
+INSERT INTO TamilMovies (Mid, MovieName, DateOfRelease)
+VALUES
+  (001, 'Cobra', '2022-08-12'),
+  (002, 'Love Today', '2022-08-12'),
+  (003, 'Don', '2021-02-14'),
+  (004, 'Thirumalai ', '2003-02-21'),
+  (005, 'Bigil', '2019-02-22'),
+  (006, 'Vadachennai','2018-02-27'),
+  (007, 'Ghilli','2004-02-19'),
+  (008, 'Pokkiri','2007-05-02'),
+  (009, 'Theri','2016-02-28'),
+  (0010, 'The Legend','2022-06-14')
+
+select * from TamilMovies
